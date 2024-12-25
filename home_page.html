@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME PAGE</title>
+    <style>
+      body {
+        /* background: violet; */
+        background: rgb(170, 60, 170);
+        text-decoration: none;
+      }
+      .navbar {
+        display: flex;
+        align-items: center;
+        color: aliceblue;
+        justify-content: space-between;
+        padding: 10px 30px;
+        position: sticky;
+        top: 10px;
+      }
+      .logo a {
+        color: aliceblue;
+        text-decoration: none;
+      }
+      li {
+        list-style: none;
+        display: inline-block;
+        padding: 30px;
+      }
+      .slidebar {
+        display: flex;
+        justify-content: center;
+        color: aliceblue;
+        align-items: normal;
+        margin: 100px;
+        /* margin-bottom: 200px; */
+       
+      }
+      .sliderbar-elem1{
+     border: solid black;
+      }
+      .shopn {
+        background: rgba(255, 30, 30, 0.841);
+        padding: 7px;
+        width: 100px;
+      }
+      .img1 {
+        width: 400px; 
+      }
+
+      .imagecon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 50px;
+      }
+
+      .scale ,
+      p {
+        width: 200px;
+        text-align: center;
+        color: aliceblue;
+      }
+      del {
+        opacity: 0.7;
+      }
+      .scale:hover {
+        transform: scale(1.5);
+      }
+      img {
+        width: 190px;
+      }
+      section {
+        display: grid;
+        padding: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2px 2px;
+        color: aliceblue;
+        
+      }
+      figure {
+        border: 1px solid #484547;
+        border-radius: 5px;
+        margin: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <a href=""><h1>Tech Shop</h1></a>
+        </div>
+        <ul>
+          <li><ion-icon name="search-outline"></ion-icon></li>
+          <li><ion-icon name="cart-outline"></ion-icon></li>
+          <li><ion-icon name="person-outline"></ion-icon></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="slidebar">
+      <div class="slidebar-elem1">
+         <h4>boAt Airdopes 131</h4>
+        <h2>Featherweight For <br> Comfort All-Day.</h2> ₹1,099 <del>₹2,990</del>
+        <br><br>  <button class="shopn">Shop Now</button>
+      </div>
+      <div class="slidebar-elem2">
+        <img  class="img1"  src="./images/products/boat131-3.png" alt="1" width= />
+      </div>
+    </div>
+
+    <div class="imagecon">
+      <div class="scale">
+        <p>Jbl Endurance Run sport</p>
+        <img src="./images/products/jbl-endu-1.png" alt="2" />
+        <p>₹999 <del>₹1,599</del></p>
+      </div>
+      <div class="scale">
+        <p>boAt Airdopes 203</p>
+        <img src="./images/products/boat203-1.png" alt="3" />
+        <p>₹1,074 <del>₹3,999</del></p>
+      </div>
+      <div class="scale">
+        <p>boAt Rockerz 518</p>
+        <img src="./images/products/boat518-1.png" alt="4" />
+        <p>₹1,299 <del>₹3,990</del></p>
+      </div>
+      <div class="scale">
+        <p>Jbl Tune 760NC</p>
+        <img src="./images/products/jbl760nc-1.png" alt="5" />
+        <p>₹5,999 <del>₹7,999</del></p>
+      </div>
+      <div class="scale">
+        <p>boAt Rockerz 255</p>
+        <img src="./images/products/boat255r-1.png" alt="6" />
+        <p>₹899 <del>₹2,990</del></p>
+      </div>
+    </div>
+
+    <main>
+      <img src="" alt="" />
+    </main>
+    <section>
+      <figure>
+        <img src="./images/products/jbl660nc-1.png" alt="" />
+        <figcaption>
+          <p><h2>JBL Live 660NC</h2>Wireless Over-Ear NC <br />Headphones <hr>₹9,999 <del>₹14,999</del></p>
+          <button>Add to Cart</button>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./images/products/boat518-1.png" alt="" />
+        <figcaption>
+          <p><h2>boAt Rockerz 518</h2>On-Ear Wireless Headphones <hr>₹1,299 <del>₹3,990</del></p>
+          <button>Add to Cart</button>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./images/products/boat131-1.png" alt="" />
+        <figcaption>
+          <p><h2>boAt Airdopes 131</h2>Wireless Over-Ear Earbuds <hr>₹1,099 <del>₹2,990</del></p>
+          <button>Add to Cart</button>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./images/products/boat410-1.png" alt="" />
+        <figcaption>
+          <p><h2>boAt Rockerz 410</h2>Bluetooth & Wired on-Ear<br />Headphones <hr>₹1,599 <del>₹2,990</del></p>
+          <button>Add to Cart</button>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./images/products/jbl200bt-1.png" alt="" />
+        <figcaption>
+          <p><h2>JBL Live 200BT</h2>In-ear Wireless Neckband <hr>₹3,699 <del>₹5,299</del></p>
+          <button>Add to Cart</button>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./images/products/boat110-1.png" alt="" />
+        <figcaption>
+          <p><h2>boAt BassHeads 110</h2>In-Ear Wired Earphones <hr>₹1,599 <del>₹2,990</del></p>
+          <button>Add to Cart</button>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./images/products/sonyXb910n-1.png" alt="" />
+        <figcaption> <p><h2>Sony WH-XB910N</h2>Wireless Over-Ear<br />Headphones <hr>₹13,489 <del>₹19,990</del></p>
+          <button>Add to Cart</button></figcaption>
+      </figure>
+      <figure>
+        <img src="./images/products/jbl760nc-1.png" alt="" />
+        <figcaption> <p><h2>JBL Tune 760NC</h2>Wireless Over-Ear NC<br />Headphones <hr>₹5,999 <del>₹7,999</del></p>
+          <button>Add to Cart</button></figcaption>
+      </figure>
+      <figure>
+        <img src="./images/products/boat255r-1.png" alt="" />
+        <figcaption> <p><h2>boAt Rockerz 255</h2>In-Ear Wireless Neckbands<hr>₹899 <del>₹2,990</del></p>
+          <button>Add to Cart</button></figcaption>
+      </figure>
+      <figure>
+        <img src="./images/products/jbl100-1.png" alt="" />
+        <figcaption> <p><h2>JBL Wave 100</h2> In-Ear Wireless Earbuds<hr>₹2,999 <del>₹6,999</del></p>
+          <button>Add to Cart</button></figcaption>
+      </figure>
+      <figure>
+        <img src="./images/products/sony1000xm4-1.png" alt="" />
+        <figcaption><p><h2>Sony WF-1000XM4</h2>Wireless In-Ear<br />Headphones <hr>₹19,990 <del>₹24,990</del></p>
+          <button>Add to Cart</button></figcaption>
+      </figure>
+      <figure>
+        <img src="" alt="" />
+        <figcaption></figcaption>
+      </figure>
+    </section>
+    <footer></footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
