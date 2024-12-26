@@ -6,7 +6,7 @@
     <title>HOME PAGE</title>
     <style>
       body {
-        background: rgb(12, 10, 12);
+         background: #040304;
         /* background: rgb(211, 157, 211); */
         width: 80%;
         margin-left: 140px;
@@ -117,7 +117,7 @@
        border-radius: 2px;
        cursor: pointer;
       }
-      input{
+      .input1{
         color: aliceblue;
         background: rgb(12, 10, 12);
         border: none;
@@ -126,7 +126,7 @@
         cursor: pointer;
         transition:all .2s linear .001s 
       }
-      input:hover {
+      .input1:hover {
         background: #d00000;
       }
       h6 {
@@ -176,8 +176,8 @@
         justify-content: space-between;
         align-items: center ;
         color: aliceblue;
-        width: 90%;
-        margin-left: 20px;
+        width: 80%;
+        margin-left: 112px;
         font-size: 17px;
       }
       footer {
@@ -185,19 +185,32 @@
         justify-content:space-between;
         width: 90%;
         margin: 10px;
-        border: solid;
+        margin-left: 104px;
+       
         
       }
-        .ul1{
-          text-decoration: none;
-          margin-right: 20px;
-          border: solid;
-          width: 20px;
+        ul{
+           align-items: center;
+          margin-left: 66px;
+          width: 250px;
+          list-style: none;
+          color: aliceblue;
+     }
+     .firstul{
+       margin-left: -1px;
+       padding: 10px;
 
      }
-    
-    
-     
+    .input3{
+      background: #d00000;
+      border: none;
+      border-radius: 2px;
+      padding: 5px;
+    }
+    .input2{
+      padding: 5px;
+    }
+   
     </style>
   </head>
   <body>
@@ -254,11 +267,11 @@
   
       <h6> Top products </h6>
       <form action="">
-        <input type="submit" id="all" value="All">
-        <input type="submit" id="Headphones" value="Headphones">
-        <input type="submit" id="Earbuds" value="Earbuds">
-        <input type="submit" id="Earphones" value="Earphones">
-        <input type="submit" id="Neckbands" value="Neckbands">
+        <input  class="input1" type="submit" id="all" value="All">
+        <input  class="input1" type="submit" id="Headphones" value="Headphones">
+        <input  class="input1" type="submit" id="Earbuds" value="Earbuds">
+        <input  class="input1" type="submit" id="Earphones" value="Earphones">
+        <input  class="input1" type="submit" id="Neckbands" value="Neckbands">
 
       </form>
     </main>
@@ -360,19 +373,19 @@
         </tr>
       </tbody>
     </table>
+  
     <div class="newnav">
       <div>Tech-Shop</div>
       <div>Help</div>
       <div>Policies</div>
       <div>Company</div>
     </div>
-
-    <footer>
+      <footer>
          
-        <ul class="ul1">
+        <ul class="firstul">
           <li><p>Subscribe to our Email alerts to receive early discount offers, and new products info</p></li>
-          <li><input type="email" id="Email" placeholder="Email Address*"></li>
-          <li><button>Subscribe</button></li>
+          <li><input class="input2" type="email" id="Email" placeholder="Email Address*"></li><br>
+          <li><input class="input3"  type="submit" name="submit" value="Subscribe"></li>
         </ul>
         
         <ul>
@@ -396,8 +409,8 @@
           <li><p>Careers</p></li>
           <li><p>Affiliates</p></li>
         </ul>
-    </footer>
-
+        </footer>
+   
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
