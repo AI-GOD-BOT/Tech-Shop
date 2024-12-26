@@ -6,9 +6,11 @@
     <title>HOME PAGE</title>
     <style>
       body {
-        /* background: violet; */
-        background: rgb(170, 60, 170);
-        text-decoration: none;
+        background: rgb(12, 10, 12);
+        /* background: rgb(211, 157, 211); */
+        width: 80%;
+        margin-left: 140px;
+       
       }
       .navbar {
         display: flex;
@@ -23,7 +25,7 @@
         color: aliceblue;
         text-decoration: none;
       }
-      li {
+       .list1 {
         list-style: none;
         display: inline-block;
         padding: 30px;
@@ -34,16 +36,22 @@
         color: aliceblue;
         align-items: normal;
         margin: 100px;
-        /* margin-bottom: 200px; */
-       
       }
-      .sliderbar-elem1{
-     border: solid black;
+      h5 {
+        font-size: 20px;
+      }
+      
+      h3 {
+        font-size: 40px;
+      }
+      h4{
+        font-size: 20px;
       }
       .shopn {
-        background: rgba(255, 30, 30, 0.841);
+        background: #d00000;
         padding: 7px;
         width: 100px;
+        border: none;
       }
       .img1 {
         width: 400px; 
@@ -56,20 +64,28 @@
         margin: 50px;
       }
 
-      .scale ,
-      p {
+      .scale {
         width: 200px;
         text-align: center;
         color: aliceblue;
+        transition:all .2s linear .001s 
       }
+      
+       p {
+        opacity: .8;
+       }
+
       del {
         opacity: 0.7;
+        margin-left: 5px;
       }
       .scale:hover {
-        transform: scale(1.5);
+        transform: scale(1.4);
       }
-      img {
+      img,figcaption {
         width: 190px;
+        margin: 10px;
+        margin-left: 40px;
       }
       section {
         display: grid;
@@ -84,6 +100,104 @@
         border-radius: 5px;
         margin: 3px;
       }
+      h2{
+        font-size: 20px;
+        text-decoration: none;
+      }
+      .opacity {
+        opacity: 0.7;
+      }
+      button{
+       background: #d00000;
+       padding: 10px;
+       width: 90%;
+       margin: 10px;
+       color: aliceblue;
+       border: none;
+       border-radius: 2px;
+       cursor: pointer;
+      }
+      input{
+        color: aliceblue;
+        background: rgb(12, 10, 12);
+        border: none;
+        margin: 80px;
+        padding: 10px;
+        cursor: pointer;
+        transition:all .2s linear .001s 
+      }
+      input:hover {
+        background: #d00000;
+      }
+      h6 {
+        font-size: 25px;
+        text-align: center;
+        color: aliceblue;
+        margin-top: 150px;
+        margin-bottom: 10px;
+      }
+      .space{
+        margin: 100px;
+        margin-bottom: 130px;
+      }
+      .h7 {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 180px;
+      }
+      .last {
+       margin: 80px;
+      }
+      .table1{
+       width: 99%; 
+       color: aliceblue;
+       margin-bottom: 80px;
+      } 
+      td {
+        padding: 1px;
+        text-align: center;
+        
+      }
+      .icon2 {
+        color: #d00000;
+        font-size: 25px;
+      }
+      .table2 {
+       align-items: center;
+        position:absolute;
+        right: 190px;
+      }
+      .trspace{
+        padding: 20px;
+        margin: 40px;
+      }
+      .newnav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center ;
+        color: aliceblue;
+        width: 90%;
+        margin-left: 20px;
+        font-size: 17px;
+      }
+      footer {
+        display: flex;
+        justify-content:space-between;
+        width: 90%;
+        margin: 10px;
+        border: solid;
+        
+      }
+        .ul1{
+          text-decoration: none;
+          margin-right: 20px;
+          border: solid;
+          width: 20px;
+
+     }
+    
+    
+     
     </style>
   </head>
   <body>
@@ -93,23 +207,23 @@
           <a href=""><h1>Tech Shop</h1></a>
         </div>
         <ul>
-          <li><ion-icon name="search-outline"></ion-icon></li>
-          <li><ion-icon name="cart-outline"></ion-icon></li>
-          <li><ion-icon name="person-outline"></ion-icon></li>
+          <li class="list1"><ion-icon name="search-outline"></ion-icon></li>
+          <li class="list1"><ion-icon name="cart-outline"></ion-icon></li>
+          <li class="list1"><ion-icon name="person-outline"></ion-icon></li>
         </ul>
       </div>
     </nav>
     <div class="slidebar">
       <div class="slidebar-elem1">
          <h4>boAt Airdopes 131</h4>
-        <h2>Featherweight For <br> Comfort All-Day.</h2> ₹1,099 <del>₹2,990</del>
-        <br><br>  <button class="shopn">Shop Now</button>
+        <h3>Featherweight For <br> Comfort All-Day.</h3> <h5> ₹1,099 <del>₹2,990</del></h5>
+         <button class="shopn">Shop Now</button>
       </div>
       <div class="slidebar-elem2">
         <img  class="img1"  src="./images/products/boat131-3.png" alt="1" width= />
       </div>
     </div>
-
+   <div class="space"> <h6 >Featured products</h6></div>
     <div class="imagecon">
       <div class="scale">
         <p>Jbl Endurance Run sport</p>
@@ -137,84 +251,152 @@
         <p>₹899 <del>₹2,990</del></p>
       </div>
     </div>
+  
+      <h6> Top products </h6>
+      <form action="">
+        <input type="submit" id="all" value="All">
+        <input type="submit" id="Headphones" value="Headphones">
+        <input type="submit" id="Earbuds" value="Earbuds">
+        <input type="submit" id="Earphones" value="Earphones">
+        <input type="submit" id="Neckbands" value="Neckbands">
 
-    <main>
-      <img src="" alt="" />
+      </form>
     </main>
     <section>
       <figure>
         <img src="./images/products/jbl660nc-1.png" alt="" />
         <figcaption>
-          <p><h2>JBL Live 660NC</h2>Wireless Over-Ear NC <br />Headphones <hr>₹9,999 <del>₹14,999</del></p>
+          <h2>JBL Live 660NC</h2><p class="opacity">Wireless Over-Ear NC Headphones </p><h5><hr>₹9,999 <del>₹14,999</del></h5>
           <button>Add to Cart</button>
         </figcaption>
       </figure>
       <figure>
         <img src="./images/products/boat518-1.png" alt="" />
         <figcaption>
-          <p><h2>boAt Rockerz 518</h2>On-Ear Wireless Headphones <hr>₹1,299 <del>₹3,990</del></p>
+         <h2>boAt Rockerz 518</h2><p class="opacity">On-Ear Wireless Headphones <hr></p><h5>₹1,299 <del>₹3,990</del></h5>
           <button>Add to Cart</button>
         </figcaption>
       </figure>
       <figure>
         <img src="./images/products/boat131-1.png" alt="" />
         <figcaption>
-          <p><h2>boAt Airdopes 131</h2>Wireless Over-Ear Earbuds <hr>₹1,099 <del>₹2,990</del></p>
+         <h2>boAt Airdopes 131</h2><p class="opacity">Wireless Over-Ear Earbuds </p><hr><h5>₹1,099 <del>₹2,990</del></h5>
           <button>Add to Cart</button>
         </figcaption>
       </figure>
       <figure>
         <img src="./images/products/boat410-1.png" alt="" />
         <figcaption>
-          <p><h2>boAt Rockerz 410</h2>Bluetooth & Wired on-Ear<br />Headphones <hr>₹1,599 <del>₹2,990</del></p>
+         <h2>boAt Rockerz 410</h2> <p class="opacity">Bluetooth & Wired on-Ear<br />Headphones </p><hr><h5>₹1,599 <del>₹2,990</del></h5>
           <button>Add to Cart</button>
         </figcaption>
       </figure>
       <figure>
         <img src="./images/products/jbl200bt-1.png" alt="" />
         <figcaption>
-          <p><h2>JBL Live 200BT</h2>In-ear Wireless Neckband <hr>₹3,699 <del>₹5,299</del></p>
+          <h2>JBL Live 200BT</h2><p class="opacity">In-ear Wireless Neckband </p><hr><h5>₹3,699 <del>₹5,299</del></h5>
           <button>Add to Cart</button>
         </figcaption>
       </figure>
       <figure>
         <img src="./images/products/boat110-1.png" alt="" />
         <figcaption>
-          <p><h2>boAt BassHeads 110</h2>In-Ear Wired Earphones <hr>₹1,599 <del>₹2,990</del></p>
+          <h2>boAt BassHeads 110</h2><p class="opacity">In-Ear Wired Earphones <hr></p><h5>₹1,599 <del>₹2,990</del></h5>
           <button>Add to Cart</button>
         </figcaption>
       </figure>
       <figure>
         <img src="./images/products/sonyXb910n-1.png" alt="" />
-        <figcaption> <p><h2>Sony WH-XB910N</h2>Wireless Over-Ear<br />Headphones <hr>₹13,489 <del>₹19,990</del></p>
+        <figcaption>
+          <h2>Sony WH-XB910N</h2> <p class="opacity">Wireless Over-Ear<br />Headphones</p><hr><h5>₹13,489 <del>₹19,990</del></h5>
           <button>Add to Cart</button></figcaption>
       </figure>
       <figure>
         <img src="./images/products/jbl760nc-1.png" alt="" />
-        <figcaption> <p><h2>JBL Tune 760NC</h2>Wireless Over-Ear NC<br />Headphones <hr>₹5,999 <del>₹7,999</del></p>
+        <figcaption> 
+          <h2>JBL Tune 760NC</h2><p class="opacity">Wireless Over-Ear NC<br />Headphones</p><hr><h5>₹5,999 <del>₹7,999</del></h5>
           <button>Add to Cart</button></figcaption>
       </figure>
       <figure>
         <img src="./images/products/boat255r-1.png" alt="" />
-        <figcaption> <p><h2>boAt Rockerz 255</h2>In-Ear Wireless Neckbands<hr>₹899 <del>₹2,990</del></p>
+        <figcaption> 
+          <h2>boAt Rockerz 255</h2><p class="opacity">In-Ear Wireless Neckbands</p><hr><h5>₹899 <del>₹2,990</del></h5>
           <button>Add to Cart</button></figcaption>
       </figure>
       <figure>
         <img src="./images/products/jbl100-1.png" alt="" />
-        <figcaption> <p><h2>JBL Wave 100</h2> In-Ear Wireless Earbuds<hr>₹2,999 <del>₹6,999</del></p>
+        <figcaption> 
+          <h2>JBL Wave 100</h2><p class="opacity">In-Ear Wireless Earbuds</p><hr><h5>₹2,999 <del>₹6,999</del></h5>
           <button>Add to Cart</button></figcaption>
       </figure>
       <figure>
         <img src="./images/products/sony1000xm4-1.png" alt="" />
-        <figcaption><p><h2>Sony WF-1000XM4</h2>Wireless In-Ear<br />Headphones <hr>₹19,990 <del>₹24,990</del></p>
+        <figcaption>
+          <h2>Sony WF-1000XM4</h2><p class="opacity">Wireless In-Ear<br />Headphones</p><hr><h5>₹19,990 <del>₹24,990</del></h5>
           <button>Add to Cart</button></figcaption>
       </figure>
       <figure>
         <img src="" alt="" />
-        <figcaption></figcaption>
+        <figcaption><div class="h7"> Browse All products </div> </figcaption>
       </figure>
     </section>
-    <footer></footer>
+    <div class="space"> <h6 >Our Advantages</h6></div>
+    <table class="table1" >
+      <thead>
+        <tr> 
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+         
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><ion-icon class ="icon2"name="rocket-sharp"></ion-icon> <h2>Express Delivery </h2><p>Ships In 24-Hours</p> </td>
+          <td><ion-icon class ="icon2" name="shield-half-sharp"></ion-icon><h2>Brand Warranty</h2><p>100% Origianl products</p> </td>
+          <td><ion-icon class ="icon2" name="pricetags-sharp"></ion-icon><h2>Exciting Deals</h2><p>On All Prepaid Orders</p></td>
+          <td><ion-icon class ="icon2" name="card"></ion-icon><h2>Secure Payments</h2><p>SSL/Secure certificate</p> </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="newnav">
+      <div>Tech-Shop</div>
+      <div>Help</div>
+      <div>Policies</div>
+      <div>Company</div>
+    </div>
+
+    <footer>
+         
+        <ul class="ul1">
+          <li><p>Subscribe to our Email alerts to receive early discount offers, and new products info</p></li>
+          <li><input type="email" id="Email" placeholder="Email Address*"></li>
+          <li><button>Subscribe</button></li>
+        </ul>
+        
+        <ul>
+          <li><p>FAQs</p></li>
+          <li><p>track Order</p></li>
+          <li><p>Cancel Order</p></li>
+          <li><p>Return Order</p></li>
+          <li><p>Warranty Info</p></li>
+         </ul>
+         <ul>
+          <li><p>Return Policy</p></li>
+          <li><p>Security</p></li>
+          <li><p>Sitemap</p></li>
+          <li><p>Privacy Policy</p></li>
+          <li><p>Term & Conditions</p></li>
+        </ul>
+        <ul>
+          <li><p>About Us</p></li>
+          <li><p>Contact Us</p></li>
+          <li><p>Service Centers</p></li>
+          <li><p>Careers</p></li>
+          <li><p>Affiliates</p></li>
+        </ul>
+    </footer>
 
     <script
       type="module"
@@ -223,6 +405,6 @@
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    > </script>
   </body>
 </html>
