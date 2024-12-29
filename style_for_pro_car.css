@@ -21,6 +21,7 @@ h1 {
   display: inline-block;
   margin: 0px 30px;
   cursor: pointer;
+  font-size: 20px;
 }
 ul {
   margin-top: 34px;
@@ -185,6 +186,9 @@ ul {
   overflow-y: scroll;
   overflow-x: none;
 }
+.div1::-webkit-scrollbar {
+  display: none;
+}
 img {
   width: 200px;
 }
@@ -201,9 +205,14 @@ img {
   color: #484547;
 }
 .div4 {
-  text-align: center;
+  text-align: start;
 }
 .span2 {
   padding: 5px 10px;
-  background-color: cadetblue;
+  background-color: rgb(73, 75, 75);
+  cursor: pointer;
+}
+.span3 {
+  color: #d00000;
+  padding: 5px 10px;
 }
