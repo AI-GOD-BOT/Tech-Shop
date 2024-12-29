@@ -12,6 +12,9 @@ h1 {
 .navbar {
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .logo a {
   text-decoration: none;
@@ -199,6 +202,7 @@ img {
 .ion1 {
   font-size: 20px;
   margin-top: 20px;
+  cursor: pointer;
 }
 .hr2 {
   opacity: 0.5;
@@ -215,4 +219,41 @@ img {
 .span3 {
   color: #d00000;
   padding: 5px 10px;
+}
+.table3 {
+  margin-top: 20px;
+  padding: 10px 10px;
+  text-align: start;
+}
+.tr3 {
+  opacity: 0.8;
+  margin: 1px 1px;
+  padding: 5px 10px;
+  display: table-row;
+}
+.td3 {
+  color: rgb(82, 129, 12);
+}
+.total {
+  font-size: 25px;
+  text-align: center;
+  margin: 26px 5px;
+  padding-left: 40px;
+  opacity: 0.8;
+}
+.price1 {
+  padding: 3px 32px;
+}
+.button4 {
+  width: 80%;
+  background-color: #d00000;
+  padding: 8px 10px;
+  margin-left: 41px;
+  border-radius: 2px;
+}
+.Order1 {
+  margin-left: 30px;
+}
+hr {
+  opacity: 0.8;
 }
